@@ -1,4 +1,4 @@
-class LoginPage {
+class LoginTest {
 
     selectorsList() {
      const selectors = {
@@ -6,7 +6,8 @@ class LoginPage {
         usernameField: "#username",
         passwordField: "#password",
         loginButton: "button",
-        wrongCredentialAlert: ".MuiAlert-message",
+        CredentialAlert: ".MuiAlert-message",
+
         
         }
         
@@ -33,9 +34,9 @@ class LoginPage {
         AlertErrorLogin() {
 
 
-            cy.get(this.selectorsList().wrongCredentialAlert)
+            cy.get(this.selectorsList().CredentialAlert)
 
         }
     }
 
-    export default LoginPage
+    export default LoginTest
