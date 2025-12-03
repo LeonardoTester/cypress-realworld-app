@@ -1,5 +1,5 @@
 
-class HomePage {
+class HomeDashboard {
 
     selectorsList() {
      const selectors = {
@@ -20,18 +20,10 @@ class HomePage {
         
         cy.get(this.selectorsList().Homegrid)
 
-
-                
-
-
         }
 
     }
 
-    export default HomePage
+    export default HomeDashboard
 
 
-
-
-
-// cy.get(this.selectorsList().CredentialAlert)

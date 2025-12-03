@@ -185,7 +185,7 @@ const SignUpForm: React.FC<Props> = ({ authService }) => {
                 color="primary"
                 className={classes.submit}
                 data-test="signup-submit"
-                disabled={!isValid || isSubmitting}
+                disabled={isSubmitting}
               >
                 Sign Up
               </Button>

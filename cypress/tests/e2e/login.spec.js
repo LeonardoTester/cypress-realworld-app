@@ -1,24 +1,24 @@
 import userData from '../../fixtures/userData.json'
 import LoginTest from './pages/loginPage'
-import HomePage from './pages/homePage'
-// import DashboardPage from '../pages/dashboardPage'
+import HomeDashboard from './pages/homePage'
+
    
-const homepage = new HomePage
+const homepage = new HomeDashboard()
 const loginPage = new LoginTest()
-// const dashboardPage = new DashboardPage()
+
   
 
 describe('Real App', () => {
 
-  it('User Info - Sucesso)', () => {
+  it('Login Success)', () => {
     loginPage.acessLoginPage()
     loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
     homepage.infoGrid()
-    // dashboardPage.checkDashboard()         // checagem de dashboard   
+      
     
   })
 
-  it('Login - Fail', () => {
+  it('Login Fail', () => {
 
 
     loginPage.acessLoginPage()
@@ -27,6 +27,8 @@ describe('Real App', () => {
     
   })
 })
+
+
 
 
 
