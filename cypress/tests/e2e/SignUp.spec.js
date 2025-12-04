@@ -6,7 +6,7 @@ const signTest = new TestSign()
 
 describe('Real App', () => {
 
-  it.skip('Sign Up - Success)', () => {
+  it('Sign Up - Success)', () => {
   
     signTest.goToSignUp()
     signTest.TestSuccessRegister('Leonardo','Nascimento', 'EternoSeja', 'vasco123', 'vasco123')
