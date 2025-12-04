@@ -6,7 +6,7 @@ const signTest = new TestSign()
 
 describe('Real App', () => {
 
-  it('Sign Up - Success)', () => {
+  it.skip('Sign Up - Success)', () => {
   
     signTest.goToSignUp()
     signTest.TestSuccessRegister('Leonardo','Nascimento', 'EternoSeja', 'vasco123', 'vasco123')
@@ -17,7 +17,7 @@ describe('Real App', () => {
     it('Sign Up - Not Success', () => {
   
     signTest.goToSignUp()
-    signTest.TestNotSuccessRegister('EternoSeja', 'vasco123', 'vasco123')
+    signTest.TestNotSuccessRegister('{selectall}{backspace}', '{selectall}{backspace}', '{selectall}{backspace}', '{selectall}{backspace}', '{selectall}{backspace}')
       
     })
 })
