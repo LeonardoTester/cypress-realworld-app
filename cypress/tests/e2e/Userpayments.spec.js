@@ -19,5 +19,15 @@ describe('Real App', () => {
     payTest.infoPayment('Kristian Bradtke', '200', 'Thank you')
     
     })
+
+    it('Payments - not amount)', () => {
+    loginPage.acessLoginPage()
+    loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
+    homepage.infoGrid()
+    payTest.infoPayment('Kristian Bradtke', '2000', 'Thank you')
+    payTest.Balance()
+    
+    })
+
   })
 

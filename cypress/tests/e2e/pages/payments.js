@@ -13,7 +13,8 @@ class TestPayment {
         AddNote:"[placeholder='Add a note']",
         ButtonPay: "[data-test='transaction-create-submit-payment']",
         CompleteTransaction: ".TransactionCreateStepThree-paper",
-        AlertSuccessPayment: '[data-test="alert-bar-success"]'
+        AlertSuccessPayment: '[data-test="alert-bar-success"]',
+        AccountBalance: "[data-test='sidenav-user-balance']"
 
 
           
@@ -35,13 +36,15 @@ class TestPayment {
         cy.get(this.selectorsList().ButtonPay).click()
         cy.get(this.selectorsList().CompleteTransaction)
         cy.get(this.selectorsList().AlertSuccessPayment)
-
-
-
-
-
+        
         }
 
+        Balance() {
+
+         cy.get(this.selectorsList().AccountBalance).should('contain', '$0.00')
+
+        }
+        
     }
 
     export default TestPayment
