@@ -12,7 +12,7 @@ const payTest = new TestPayment()
 
 describe('Real App', () => {
 
-  it('Payments)', () => {
+  it('Payments - Sufficient Balance)', () => {
     loginPage.acessLoginPage()
     loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
     homepage.infoGrid()
@@ -20,7 +20,7 @@ describe('Real App', () => {
     
     })
 
-    it('Payments - not amount)', () => {
+    it('Payments - Insufficient Balance)', () => {
     loginPage.acessLoginPage()
     loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
     homepage.infoGrid()
