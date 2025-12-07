@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 100953,
+      "balance": 150953,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "410-786-2112",
       "avatar": "https://avatars.dicebear.com/api/human/GjWovtg2hr.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 143026,
+      "balance": 93026,
       "createdAt": "2023-04-23T13:52:10.979Z",
       "modifiedAt": "2024-03-07T09:07:46.709Z"
     },
@@ -9855,18 +9855,6 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
-    },
-    {
-      "id": "kiZlatu5u",
-      "uuid": "d621a792-e416-45a1-b132-c757f16be38b",
-      "amount": 50000,
-      "description": "dia 6 12 2025",
-      "receiverId": "GjWovtg2hr",
-      "senderId": "uBmeaz5pX",
-      "privacyLevel": "public",
-      "status": "complete",
-      "createdAt": "2025-12-06T21:36:51.278Z",
-      "modifiedAt": "2025-12-06T21:36:51.278Z"
     }
   ],
   "likes": [
@@ -10443,16 +10431,6 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
-    },
-    {
-      "id": "X3Q-sYlO49",
-      "uuid": "0fa2fbe0-4759-434a-a7d7-85ece73b965d",
-      "userId": "GjWovtg2hr",
-      "transactionId": "kiZlatu5u",
-      "status": "received",
-      "isRead": false,
-      "createdAt": "2025-12-06T21:36:51.316Z",
-      "modifiedAt": "2025-12-06T21:36:51.316Z"
     }
   ],
   "banktransfers": [

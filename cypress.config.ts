@@ -24,9 +24,9 @@ export default defineConfig({
     runMode: 2,
   },
   eenv: {
-  apiUrl: "http://localhost:3004",  // ← agora é 3004 fixo
+  apiUrl: "http://localhost:3000",  // 
   codeCoverage: {
-    url: "http://localhost:3004/__coverage__",
+    url: "http://localhost:3000/__coverage__",
     exclude: "cypress/**/*.*",
   },
     

@@ -17,16 +17,18 @@ describe('Real App', () => {
     loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
     homepage.infoGrid()
     payhistory.infoTransactionSuccess()
-    payhistory.returnSave('paid', '500')
+    payhistory.returnSave('paid')
 
   })
 
-  it.skip('No transactions', () => {
+  it('No transactions', () => {
 
     loginPage.acessLoginPage()
-    loginPage.loginWithUser(userData.userFail.username, userData.userFail.password)
+    loginPage.loginWithUser(userData.userSucess.username, userData.userSucess.password)
+    homepage.infoGrid()
+    payhistory.infoNotTransaction()
+    payhistory.LastSave('paid')
     
-
   })
 
 })
